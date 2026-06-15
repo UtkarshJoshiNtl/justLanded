@@ -1,2 +1,2 @@
 # Satbox
-Solar system sandbox
+NOTANGRYBIRDS but with cosmic entities
