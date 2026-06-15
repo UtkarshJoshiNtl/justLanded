@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3]
+
+[ext_resource type="Script" path="res://scripts/debris_piece.gd" id="1_script"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_debris"]
+size = Vector3(1, 0.5, 2)
+
+[sub_resource type="BoxShape3D" id="BoxShape_debris"]
+size = Vector3(1, 0.5, 2)
+
+[node name="DebrisPiece" type="RigidBody3D"]
+script = ExtResource("1_script")
+
+[node name="Mesh" type="MeshInstance3D" parent="."]
+mesh = SubResource("BoxMesh_debris")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("BoxShape_debris")
